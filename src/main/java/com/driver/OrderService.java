@@ -3,9 +3,12 @@ package com.driver;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
+
 @Service
 public class OrderService {
-    OrderRepository orderRepository = new OrderRepository();
+
+    OrderRepository orderRepository=new OrderRepository();
+
     public void addOrder(Order order) {
         orderRepository.addOrder(order);
     }
